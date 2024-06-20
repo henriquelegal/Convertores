@@ -1,0 +1,42 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/peso.css">
+    <title>Peso</title>
+</head>
+<body>
+    <h1>Conversor de Pesos</h1>
+
+    <div class="campo">
+        <label for="De"><strong>De</strong></label>
+        <select id="De" required>
+            <option selected disabled value="">Selecione</option> 
+            <option>Quilogramas</option>
+            <option>Gramas</option>
+            <option>Libras</option>
+        </select>
+    </div>
+
+    <div class="valor">
+        <label for="valor"><strong>Valor</strong></label>
+        <input type="number" name="valor" id="valor" required>
+    </div>
+
+    <div class="campo">
+        <label for="Para"><strong>Para</strong></label>
+        <select id="Para" required>
+            <option selected disabled value="">Selecione</option> 
+            <option>Quilogramas</option>
+            <option>Gramas</option>
+            <option>Libras</option>
+        </select>
+    </div>
+
+    <button class="converta" type="button" onclick="converterPeso()">Converter</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="./js/peso.js"></script>
+</body>
+</html>

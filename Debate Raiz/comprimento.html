@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comprimento.css">
+    <title>Convensor</title>
+</head>
+<body>
+    <h1>Convensor de Comprimento</h1>
+    <div class="campo">
+        <label for="De"><strong>De</strong></label>
+        <select id="De" required>
+            <option selected disabled value="Selecione">Selecione</option> 
+            <option>Centímetro</option>
+            <option>Metro</option>
+            <option>Milímetro</option>
+        </select>
+    </div>
+
+    <div class="valor">
+        <label for="valor"><strong>Valor</strong></label>
+        <input type="number" name="valor" id="valor" required>
+    </div>
+
+    <div class="campo">
+        <label for="Para"><strong>Para</strong></label>
+        <select id="Para" required>
+            <option selected disabled value="Selecione">Selecione</option> 
+            <option>Centímetro</option>
+            <option>Metro</option>
+            <option>Milímetro</option>
+        </select>
+    </div>
+
+    <button class="converta" type="button" onclick="converterComprimento()">Converta</button>
+
+    <div id="resultado" class="resultado"></div>
+
+<script src="./js/comprimento.js"></script>
+</body>
+</html>
